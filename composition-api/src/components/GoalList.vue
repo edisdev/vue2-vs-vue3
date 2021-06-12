@@ -1,7 +1,7 @@
 <template>
   <section class="GoalList">
     <div 
-      v-for="goal in list"
+      v-for="goal in goalList"
       :key="goal.id"
       class="goalitem">
       {{ goal.text }}

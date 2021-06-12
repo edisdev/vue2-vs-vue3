@@ -28,7 +28,10 @@ export default {
         return;
       }
       this.$emit("newGoal", this.goal);
-      this.goal = '';
+
+      this.$nextTick(() => {
+        this.goal = '';
+      })
     },
   }
 };
